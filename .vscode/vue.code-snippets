@@ -1,0 +1,44 @@
+{
+  "vue-3-setup": {
+    "prefix": "vue-3-setup",
+    "body": ["<script setup lang=\"ts\">", "", "</script>", "<template>", "\t", "</template>"],
+    "description": "vue-3-setup"
+  },
+  "page-vuetify": {
+    "prefix": "page-vuetify",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "",
+      "</script>",
+      "<template>",
+      "\t<v-container>",
+      "\t\t<v-row>",
+      "\t\t\t<v-col cols=\"12\">",
+      "\t\t\t\t$0",
+      "\t\t\t</v-col>",
+      "\t\t</v-row>",
+      "\t</v-container>",
+      "</template>",
+      ""
+    ],
+    "description": "page-vuetify"
+  },
+  "layout-vuetify": {
+    "prefix": "layout-vuetify",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "",
+      "</script>",
+      "<template>",
+      "\t<v-app>",
+      "\t\t$0",
+      "\t\t<v-main>",
+      "\t\t\t<slot/>",
+      "\t\t</v-main>",
+      "\t</v-app>",
+      "</template>",
+      ""
+    ],
+    "description": "layout-vuetify"
+  }
+}

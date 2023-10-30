@@ -1,0 +1,33 @@
+{
+  "name": "web",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/web",
+  "projectType": "application",
+  "targets": {
+    "dev": {
+      "command": "nuxt dev {projectRoot}"
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "nuxt generate {projectRoot}",
+          "nuxt cleanup {projectRoot}",
+          "nuxt prepare {projectRoot}"
+        ],
+        "parallel": false
+      },
+      "outputs": ["{workspaceRoot}/dist/apps/web", "{projectRoot}/.nuxt"]
+    },
+    "postinstall": {
+      "command": "nuxt prepare {projectRoot}"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/web/**/*.{ts,vue}"]
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "module-nest": {
+    "prefix": "module-nest",
+    "body": [
+      "import {Module} from '@nestjs/common';",
+      "",
+      "@Module({",
+      "\timports: [],",
+      "\tcontrollers: [],",
+      "\tproviders: [],",
+      "\texports: [],",
+      "})",
+      "export class $0 \t{}"
+    ],
+    "description": "module-nest"
+  },
+  "controller-nest": {
+    "prefix": "controller-nest",
+    "body": ["import {Controller} from '@nestjs/common';", "", "@Controller('$1')", "export class $0Controller {}"],
+    "description": "controller-nest"
+  },
+  "service-nest": {
+    "prefix": "service-nest",
+    "body": ["import {Injectable} from '@nestjs/common';", "", "@Injectable()", "export class $0Service {}"],
+    "description": "service-nest"
+  },
+  "guard-nest": {
+    "prefix": "guard-nest",
+    "body": [
+      "import {CanActivate, ExecutionContext, Injectable} from '@nestjs/common';",
+      "import { Observable } from 'rxjs';",
+      "",
+      "@Injectable()",
+      "export class $0Guard implements CanActivate {",
+      "",
+      "\tcanActivate(context: ExecutionContext): boolean | Promise<boolean> | Observable<boolean> {",
+      "\t\t",
+      "",
+      "\t\t",
+      "\t\treturn true;",
+      "\t}",
+      "",
+      "}"
+    ],
+    "description": "guard-nest"
+  },
+  "schema-nestjs": {
+    "prefix": "schema-nestjs",
+    "body": [
+      "import { Schema, SchemaFactory } from \"@nestjs/mongoose\";",
+      "import {HydratedDocument, Model} from 'mongoose'",
+      "",
+      "@Schema()",
+      "export class $0 {",
+      "",
+      "}",
+      "",
+      "export type $0Document = HydratedDocument<$0>;",
+      "",
+      "export type $0Model = Model<$0>;",
+      "",
+      "export const $0Schema = SchemaFactory.createForClass($0);"
+    ],
+    "description": "schema-nestjs"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "extends": ["../../.eslintrc.json"],
+  "ignorePatterns": ["!**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {}
+    },
+
+    // --------- Nuxt Specific Config Options -------- //
+    {
+      "files": ["*.vue"],
+      "rules": {
+        "no-undef": "off"
+      }
+    },
+    {
+      "files": [
+        // These pages are not used directly by users so they can have one-word names.
+        "**/pages/**/*.{js,ts,jsx,tsx,vue}",
+        "**/layouts/**/*.{js,ts,jsx,tsx,vue}",
+        "**/app.{js,ts,jsx,tsx,vue}",
+        "**/error.{js,ts,jsx,tsx,vue}",
+        // These files should have multiple words in their names as they are within subdirectories.
+        "**/components/*/**/*.{js,ts,jsx,tsx,vue}"
+      ],
+      "rules": { "vue/multi-word-component-names": "off" }
+    }
+  ]
+}

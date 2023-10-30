@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "nrwl.angular-console",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-rename-tag",
+    "zignd.html-css-class-completion",
+    "firsttris.vscode-jest-runner",
+    "ms-azuretools.vscode-docker",
+    "mikestead.dotenv",
+    "redhat.vscode-yaml",
+    "bierner.markdown-preview-github-styles",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "vue.vscode-typescript-vue-plugin",
+    "vue.volar",
+    "eamodio.gitlens",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

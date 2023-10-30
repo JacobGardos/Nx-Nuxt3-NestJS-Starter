@@ -12,5 +12,8 @@
   </v-container>
 </template>
 <script setup lang="ts">
+import { isEven } from '@org/is-even';
+
+console.log('Got shared library is-even', isEven());
 const { execute, data, pending } = await useLazyFetch('/api/hello-world');
 </script>
